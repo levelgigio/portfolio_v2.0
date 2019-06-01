@@ -20,7 +20,6 @@ services:
     build: ./client
     environment:
       PORT: ${REACT_APP_PORT} # PORT is the default name for the RN port env var
-      SERVER_PORT: ${SERVER_PORT} # Used in packege.json to set proxy
     expose:
       - ${REACT_APP_PORT}
     ports:

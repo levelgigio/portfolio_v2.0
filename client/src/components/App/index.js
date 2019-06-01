@@ -17,7 +17,7 @@ export default function App() {
       <Title>Mds {response}</Title>
       <button
         onClick={() => {
-          callApi().then(res => setResponse(res));
+          callApi().then(res => setResponse(response + res));
         }}
       >
         Click me
