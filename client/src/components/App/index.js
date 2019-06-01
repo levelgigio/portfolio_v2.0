@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Title } from "./styles";
 
 class App extends Component {
   state = {
@@ -22,11 +23,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Que isso {this.state.response}</h1>
-        </header>
-      </div>
+      <>
+        <Title>Mds {this.state.response}</Title>
+      </>
     );
   }
 }
