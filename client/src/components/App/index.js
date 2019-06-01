@@ -8,8 +8,8 @@ export default function App() {
     const response = await fetch("http://localhost:8000/api/mensagem");
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
-    console.log(body.express);
-    return String(body.express);
+
+    return body.express;
   }
 
   return (
