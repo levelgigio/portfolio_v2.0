@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Title } from "./styles";
+import React, { useEffect } from "react";
+import Splash from "../Splash";
 
 export default function App() {
   // Everytime a variable in the array changes, this useEffect function triggers
@@ -8,8 +8,6 @@ export default function App() {
   useEffect(() => {
     callApi().then(res => (document.title = res));
   }, []);
-
-  const [response, setResponse] = useState("");
 
   async function callApi() {
     const response = await fetch("http://localhost:8000/api/mensagem");
@@ -21,14 +19,7 @@ export default function App() {
 
   return (
     <>
-      <Title>Mds {response}</Title>
-      <button
-        onClick={() => {
-          callApi().then(res => setResponse(response + res));
-        }}
-      >
-        Click me
-      </button>
+      <Splash />
     </>
   );
 }
