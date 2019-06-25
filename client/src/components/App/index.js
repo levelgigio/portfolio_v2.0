@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Splash from "../Splash";
+import About from "../About";
 import { WhiteSpace } from "./styles";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
   return (
     <>
       <Splash />
+      <About />
       <WhiteSpace />
     </>
   );
