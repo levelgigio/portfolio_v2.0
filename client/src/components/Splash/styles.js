@@ -1,25 +1,13 @@
 import styled from "styled-components";
-import background_vid from "../../assets/coding-2.mp4";
+import background_gif from "../../assets/coding-2.gif";
 
-export const Wrapper = styled.div`
+export const Background = styled.div`
   width: 100vw;
   height: 100vh;
-  perspective: 2px;
-  overflow-y: auto;
-`;
-
-export const BackgroundVideo = styled.video.attrs({
-  autoPlay: true,
-  loop: true,
-  muted: true,
-  type: "video/mp4",
-  src: background_vid
-})`
-  position: fixed;
-  z-index: -10;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-image: url(${background_gif});
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 `;
 
 export const Name = styled.h2`

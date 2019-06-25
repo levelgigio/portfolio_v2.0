@@ -1,7 +1,6 @@
 import React from "react";
 import {
-  Wrapper,
-  BackgroundVideo,
+  Background,
   Grid,
   Name,
   Languages,
@@ -12,8 +11,7 @@ import {
 
 export default function Splash() {
   return (
-    <Wrapper>
-      <BackgroundVideo />
+    <Background>
       <Grid>
         <Name>giovanni forastieri</Name>
         <Languages>🇺🇸 🇫🇷 🇧🇷</Languages>
@@ -27,6 +25,6 @@ export default function Splash() {
           <ArrowUp>⌃</ArrowUp>
         </Footer>
       </Grid>
-    </Wrapper>
+    </Background>
   );
 }
