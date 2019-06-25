@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Splash from "../Splash";
+import { WhiteSpace } from "./styles";
 
 export default function App() {
   // Everytime a variable in the array changes, this useEffect function triggers
@@ -20,6 +21,7 @@ export default function App() {
   return (
     <>
       <Splash />
+      <WhiteSpace />
     </>
   );
 }

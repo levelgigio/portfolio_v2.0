@@ -4,6 +4,8 @@ import background_vid from "../../assets/coding-2.mp4";
 export const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
+  perspective: 2px;
+  overflow-y: auto;
 `;
 
 export const BackgroundVideo = styled.video.attrs({
@@ -13,8 +15,8 @@ export const BackgroundVideo = styled.video.attrs({
   type: "video/mp4",
   src: background_vid
 })`
-  position: absolute;
-  z-index: -1;
+  position: fixed;
+  z-index: -10;
   width: 100%;
   height: 100%;
   object-fit: cover;
