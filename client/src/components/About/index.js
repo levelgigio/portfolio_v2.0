@@ -19,6 +19,10 @@ export default function About() {
         <Picture src={profile_pic} />
         <Picture src={profile_pic} />
         <Picture src={profile_pic} />
+        <Picture src={profile_pic} />
+        <Picture src={profile_pic} />
+        <Picture src={profile_pic} />
+        <Picture src={profile_pic} />
       </Pictures>
     </Grid>
   );

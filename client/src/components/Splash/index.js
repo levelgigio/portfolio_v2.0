@@ -6,7 +6,7 @@ import {
   Languages,
   Description,
   Footer,
-  ArrowUp
+  Mouse
 } from "./styles";
 
 export default function Splash() {
@@ -22,7 +22,7 @@ export default function Splash() {
         </Description>
         <Footer>
           principais trabalhos
-          <ArrowUp>⌃</ArrowUp>
+          <Mouse />
         </Footer>
       </Grid>
     </Background>

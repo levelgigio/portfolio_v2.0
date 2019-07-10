@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import background_gif from "../../assets/coding-2.gif";
+import mouse from "../../assets/mouse.svg";
 
 export const Background = styled.div`
   width: 100vw;
@@ -66,9 +67,14 @@ export const Footer = styled.h3`
   }
 `;
 
-export const ArrowUp = styled.h2`
+export const Mouse = styled.img.attrs({
+  src: mouse
+})`
+  height: 3vw;
+  width: auto;
+
   position: relative;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 0;
   font-size: 1em;
   -webkit-animation: mymove 1s infinite; /* Safari 4.0 - 8.0 */
@@ -94,7 +100,7 @@ export const ArrowUp = styled.h2`
   }
 
   @media screen and (max-width: 700px) {
-    font-size: 0.8em;
+    height: 3vh;
   }
 `;
 

@@ -4,7 +4,7 @@ export const Grid = styled.div`
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto;
   grid-template-areas:
     "title pictures"
@@ -37,16 +37,14 @@ export const Pictures = styled.div`
 export const Picture = styled.img.attrs(({ src }) => ({
   src: src
 }))`
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   margin: 10px;
   border-radius: 3px;
   box-sizing: border-box;
 
   @media screen and (max-width: 700px) {
-    width: 70px;
-    height: 70px;
-    margin: 10px;
+    display: none;
   }
 `;
 
