@@ -2,6 +2,15 @@ import React, { useEffect } from "react";
 import Splash from "../Splash";
 import About from "../About";
 import { WhiteSpace } from "./styles";
+import {
+  Title,
+  Tile,
+  LargeText,
+  Squares,
+  Square,
+  MediumText,
+  Text
+} from "../Generic/styles";
 
 export default function App() {
   // Everytime a variable in the array changes, this useEffect function triggers
@@ -23,6 +32,24 @@ export default function App() {
     <>
       <Splash />
       <About />
+      <Tile>
+        <Title>
+          <LargeText>educação</LargeText>
+        </Title>
+        <Squares>
+          <Square>
+            <MediumText>Engenharia de Computação</MediumText>
+            <Text>Universidade Tecnológica Federal do Paraná (UTFPR)</Text>
+          </Square>
+          <Square>
+            <MediumText>Automação Industrial</MediumText>
+            <Text>
+              Instituto Federal de Educação, Ciência e Tecnologia do Rio de
+              Janeiro (IFRJ)
+            </Text>
+          </Square>
+        </Squares>
+      </Tile>
       <WhiteSpace />
     </>
   );

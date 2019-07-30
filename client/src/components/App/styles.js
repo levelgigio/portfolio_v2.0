@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const WhiteSpace = styled.div`
-  width: 100vw;
+  width: auto;
   height: 100vh;
   background-color: white;
 `;

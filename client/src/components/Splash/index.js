@@ -21,7 +21,6 @@ export default function Splash() {
           desenvolvedor web freelancer.
         </Description>
         <Footer>
-          principais trabalhos
           <Mouse />
         </Footer>
       </Grid>

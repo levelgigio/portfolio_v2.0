@@ -4,7 +4,9 @@ import mouse from "../../assets/mouse.svg";
 
 export const Background = styled.div`
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
+  max-height: 100%;
   background-image: url(${background_gif});
   background-attachment: fixed;
   background-position: center;
