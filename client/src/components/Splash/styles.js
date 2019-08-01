@@ -15,28 +15,20 @@ export const Background = styled.div`
 
 export const Name = styled.h2`
   grid-area: name;
-  font-size: 3vh;
   display: flex;
   margin-left: 5vw;
   margin-top: 5vh;
-  padding: 0;
   color: white;
   justify-content: flex-start;
-  font-size: 1.5em;
 `;
 
-export const Languages = styled.span.attrs({
-  role: "img",
-  ariaLabel: "languages"
-})`
+export const Languages = styled.h2`
   grid-area: languages;
   display: flex;
   justify-content: flex-end;
   text-align: center;
   margin-right: 5vw;
   margin-top: 5vh;
-  font-size: 1.5em;
-  padding: 0;
 `;
 
 export const Description = styled.h1`
@@ -46,11 +38,6 @@ export const Description = styled.h1`
   align-items: center;
   text-align: left;
   color: white;
-  font-size: 2.2em;
-
-  @media screen and (max-width: 700px) {
-    font-size: 1.2em;
-  }
 `;
 
 export const Footer = styled.h3`
@@ -62,11 +49,6 @@ export const Footer = styled.h3`
   align-items: center;
   color: white;
   margin-bottom: 1vh;
-  font-size: 1.2em;
-
-  @media screen and (max-width: 700px) {
-    font-size: 1em;
-  }
 `;
 
 export const Mouse = styled.img.attrs({
