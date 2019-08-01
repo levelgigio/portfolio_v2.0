@@ -18,6 +18,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
+    font-size: 2.8em;
+
+    @media screen and (max-width: 700px) {
+      font-size: 2.2em;
+    }
+  }
+
+  h2 {
     font-size: 2.2em;
 
     @media screen and (max-width: 700px) {
@@ -25,19 +33,11 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  h2 {
+  h3 {
     font-size: 1.5em;
 
     @media screen and (max-width: 700px) {
       font-size: 1.2em;
-    }
-  }
-
-  h3 {
-    font-size: 1.2em;
-
-    @media screen and (max-width: 700px) {
-      font-size: 1em;
     }
   }
 `;

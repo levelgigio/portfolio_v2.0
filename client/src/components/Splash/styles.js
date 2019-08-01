@@ -13,7 +13,7 @@ export const Background = styled.div`
   background-size: cover;
 `;
 
-export const Name = styled.h2`
+export const Name = styled.h3`
   grid-area: name;
   display: flex;
   margin-left: 5vw;
@@ -22,7 +22,7 @@ export const Name = styled.h2`
   justify-content: flex-start;
 `;
 
-export const Languages = styled.h2`
+export const Languages = styled.h3`
   grid-area: languages;
   display: flex;
   justify-content: flex-end;
@@ -31,7 +31,7 @@ export const Languages = styled.h2`
   margin-top: 5vh;
 `;
 
-export const Description = styled.h1`
+export const Description = styled.h2`
   grid-area: main;
   display: flex;
   justify-content: center;
