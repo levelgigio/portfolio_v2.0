@@ -10,6 +10,7 @@ export const Course = styled.div`
   padding: 40px;
   color: white;
   margin: 10px;
+  max-width: 40%;
 
   @media screen and (max-width: 700px) {
     width: 100%;

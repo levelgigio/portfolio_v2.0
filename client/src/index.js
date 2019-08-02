@@ -61,7 +61,7 @@ render(
         programming."
         photo={profilePic}
       />
-      <Divider />
+      {/* <Divider />
       <Title>educação</Title>
       <MultipleItens>
         <Education
@@ -76,7 +76,7 @@ render(
           location="Volta Redonda, RJ"
           date="2013 - 2016"
         />
-      </MultipleItens>
+      </MultipleItens> */}
       <Divider />
       <Title>conhecimentos</Title>
       <MultipleItens>
@@ -99,38 +99,38 @@ render(
         <Knowledge icon={faRaspberryPi} text="Raspberry Pi" />
         <Knowledge icon={faPlus} text="and more..." />
       </MultipleItens>
-      <Divider />
+      {/* <Divider />
       <Title>prêmios</Title>
       <MultipleItens>
         <Education
-          title="1st at RoboCupJr OnStage"
+          title="1st place at OnStage"
           institute="Latin American and Brazilian Robotics Competition"
           location="João Pessoa, PB"
           date="2014"
           award
         />
         <Education
-          title="1st at RoboCupJr OnStage"
+          title="1st place at OnStage"
           institute="RoboCup"
           location="Volta Redonda, RJ"
           date="2014"
           award
         />
         <Education
-          title="4th at RoboCupJr Soccer Lightweight"
+          title="4th place at Soccer Lightweight"
           institute="Latin American and Brazilian Robotics Competition"
           location="João Pessoa, PB"
           date="2015"
           award
         />
         <Education
-          title="16th at RoboCupJr Soccer Lightweight"
+          title="16th place at Soccer Lightweight"
           institute="RoboCup"
           location="Hefei, China"
           date="2015"
           award
         />
-      </MultipleItens>
+      </MultipleItens> */}
       <Divider />
       <Title>línguas</Title>
       <MultipleItens>
@@ -138,6 +138,10 @@ render(
         <Education title="English" institute="advanced" level="4" language />
         <Education title="French" institute="intermediate" level="3" language />
       </MultipleItens>
+      <Divider />
+      <Title>projetos</Title>
+      <Divider />
+      <Title>contato</Title>
       <WhiteSpace />
     </ContentWrapper>
     <GlobalStyle />
