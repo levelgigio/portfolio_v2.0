@@ -13,7 +13,12 @@ import About from "./components/About";
 import Education from "./components/Education";
 import profilePic from "../src/assets/profile-no-bg.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faFileCode } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCoffee,
+  faFileCode,
+  faMicrochip,
+  faDatabase
+} from "@fortawesome/free-solid-svg-icons";
 import Knowledge from "./components/Knowledge";
 
 render(
@@ -54,10 +59,13 @@ render(
       <Divider />
       <Title>conhecimentos</Title>
       <MultipleItens>
+        <Knowledge
+          icon={faFileCode}
+          text="C/C++, JavaScript, Python, HTML, CSS"
+        />
+        <Knowledge icon={faMicrochip} text="VHDL, Arduino, Raspberry" />
+        <Knowledge icon={faDatabase} text="Postgres, MongoDB, SQL" />
         <Knowledge icon={faFileCode} text="C/C++, JavaScript, HTML, CSS" />
-        <FontAwesomeIcon icon={faCoffee} size="8x" />
-        <FontAwesomeIcon icon={faCoffee} size="8x" />
-        <FontAwesomeIcon icon={faCoffee} size="8x" />
       </MultipleItens>
       <WhiteSpace />
     </ContentWrapper>
