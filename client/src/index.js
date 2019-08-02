@@ -17,8 +17,29 @@ import {
   faCoffee,
   faFileCode,
   faMicrochip,
-  faDatabase
+  faDatabase,
+  faDesktop,
+  faCode,
+  faPlus
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGit,
+  faGitSquare,
+  faGithub,
+  faGitAlt,
+  faJs,
+  faWindows,
+  faApple,
+  faRaspberryPi,
+  faPython,
+  faAws,
+  faHtml5,
+  faCss3,
+  faCss3Alt,
+  faDocker,
+  faReact,
+  faLinux
+} from "@fortawesome/free-brands-svg-icons";
 import Knowledge from "./components/Knowledge";
 
 render(
@@ -59,13 +80,63 @@ render(
       <Divider />
       <Title>conhecimentos</Title>
       <MultipleItens>
-        <Knowledge
-          icon={faFileCode}
-          text="C/C++, JavaScript, Python, HTML, CSS"
+        <Knowledge icon={faPython} text="Python" />
+        <Knowledge icon={faJs} text="Javascript" />
+        <Knowledge icon={faHtml5} text="HTML5" />
+        <Knowledge icon={faCss3Alt} text="CSS3" />
+        <Knowledge icon={faReact} text="React" />
+
+        <Knowledge icon={faCode} text="C/C++" />
+        <Knowledge icon={faDocker} text="Docker" />
+        <Knowledge icon={faDatabase} text="PostgreSQL, MongoDB" />
+        <Knowledge icon={faGitAlt} text="Git" />
+        <Knowledge icon={faAws} text="Amazon Web Services" />
+
+        <Knowledge icon={faWindows} text="Windows" />
+        <Knowledge icon={faApple} text="MacOS" />
+        <Knowledge icon={faLinux} text="Linux" />
+        <Knowledge icon={faMicrochip} text="Arduino" />
+        <Knowledge icon={faRaspberryPi} text="Raspberry Pi" />
+        <Knowledge icon={faPlus} text="and more..." />
+      </MultipleItens>
+      <Divider />
+      <Title>prêmios</Title>
+      <MultipleItens>
+        <Education
+          title="1st at RoboCupJr OnStage"
+          institute="Latin American and Brazilian Robotics Competition"
+          location="João Pessoa, PB"
+          date="2014"
+          award
         />
-        <Knowledge icon={faMicrochip} text="VHDL, Arduino, Raspberry" />
-        <Knowledge icon={faDatabase} text="Postgres, MongoDB, SQL" />
-        <Knowledge icon={faFileCode} text="C/C++, JavaScript, HTML, CSS" />
+        <Education
+          title="1st at RoboCupJr OnStage"
+          institute="RoboCup"
+          location="Volta Redonda, RJ"
+          date="2014"
+          award
+        />
+        <Education
+          title="4th at RoboCupJr Soccer Lightweight"
+          institute="Latin American and Brazilian Robotics Competition"
+          location="João Pessoa, PB"
+          date="2015"
+          award
+        />
+        <Education
+          title="16th at RoboCupJr Soccer Lightweight"
+          institute="RoboCup"
+          location="Hefei, China"
+          date="2015"
+          award
+        />
+      </MultipleItens>
+      <Divider />
+      <Title>línguas</Title>
+      <MultipleItens>
+        <Education title="Portuguese" institute="native" level="5" language />
+        <Education title="English" institute="advanced" level="4" language />
+        <Education title="French" institute="intermediate" level="3" language />
       </MultipleItens>
       <WhiteSpace />
     </ContentWrapper>
